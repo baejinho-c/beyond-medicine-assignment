@@ -1,0 +1,242 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors
+> Task :processResources UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+
+> Task :compileKotlin
+w: file:///Users/jinhobae/Downloads/beyond-medicine-assignment-kotlin-fix-ghandler/src/main/kotlin/com/bm/assignment/api/GlobalExceptionHandler.kt:122:53 Unnecessary safe call on a non-null receiver of type Throwable
+
+> Task :compileJava NO-SOURCE
+> Task :classes UP-TO-DATE
+
+> Task :compileTestKotlin
+w: file:///Users/jinhobae/Downloads/beyond-medicine-assignment-kotlin-fix-ghandler/src/test/kotlin/com/bm/assignment/AssessmentApiTests.kt:40:13 Variable 'res' is never used
+
+> Task :compileTestJava NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :test
+
+Gradle Test Executor 1 STANDARD_ERROR
+    10월 16, 2025 6:01:57 오후 org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+    경고: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+    10월 16, 2025 6:01:57 오후 org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+    경고: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+
+AssessmentApiTests STANDARD_OUT
+    18:01:57.338 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.bm.assignment.AssessmentApiTests]: AssessmentApiTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    18:01:57.371 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.bm.assignment.Application for test class com.bm.assignment.AssessmentApiTests
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+
+     :: Spring Boot ::                (v3.3.4)
+
+    2025-10-16T18:01:57.522+09:00  INFO 20044 --- [    Test worker] com.bm.assignment.AssessmentApiTests     : Starting AssessmentApiTests using Java 21.0.6 with PID 20044 (started by jinhobae in /Users/jinhobae/Downloads/beyond-medicine-assignment-kotlin-fix-ghandler)
+    2025-10-16T18:01:57.522+09:00  INFO 20044 --- [    Test worker] com.bm.assignment.AssessmentApiTests     : No active profile set, falling back to 1 default profile: "default"
+    2025-10-16T18:01:57.832+09:00  INFO 20044 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2025-10-16T18:01:57.852+09:00  INFO 20044 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+    2025-10-16T18:01:58.013+09:00  INFO 20044 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2025-10-16T18:01:58.034+09:00  INFO 20044 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+    2025-10-16T18:01:58.044+09:00  INFO 20044 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+    2025-10-16T18:01:58.138+09:00  INFO 20044 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+    2025-10-16T18:01:58.148+09:00  INFO 20044 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+    2025-10-16T18:01:58.214+09:00  INFO 20044 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bmdb user=SA
+    2025-10-16T18:01:58.215+09:00  INFO 20044 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+    2025-10-16T18:01:58.724+09:00  INFO 20044 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+    2025-10-16T18:01:58.752+09:00  INFO 20044 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2025-10-16T18:01:58.973+09:00  INFO 20044 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+    2025-10-16T18:01:59.246+09:00  WARN 20044 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+    2025-10-16T18:01:59.372+09:00  INFO 20044 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bmdb'
+    2025-10-16T18:01:59.391+09:00  INFO 20044 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2025-10-16T18:01:59.391+09:00  INFO 20044 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2025-10-16T18:01:59.391+09:00  INFO 20044 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+    2025-10-16T18:01:59.403+09:00  INFO 20044 --- [    Test worker] com.bm.assignment.AssessmentApiTests     : Started AssessmentApiTests in 1.985 seconds (process running for 2.397)
+
+AssessmentApiTests > register allowed on activation day and last active day, blocked after() STANDARD_ERROR
+    WARNING: A Java agent has been loaded dynamically (/Users/jinhobae/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
+    WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+    WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+    WARNING: Dynamic loading of agents will be disallowed by default in a future release
+
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2025-10-16T18:02:00.461+09:00  INFO 20044 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-16T18:02:00.462+09:00  INFO 20044 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-16T18:02:00.463+09:00  INFO 20044 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-16T18:02:00.464+09:00  INFO 20044 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+
+> Task :test
+
+AssessmentApiTests > register allowed on activation day and last active day, blocked after() PASSED
+
+AssessmentApiTests > weekly trend rejects invalid week range() PASSED
+
+AssessmentApiTests > reject pains over six() PASSED
+
+AssessmentApiTests > reject duplicate pain locations() PASSED
+
+AssessmentApiTests > register daily assessment success() PASSED
+
+AssessmentApiTests > create daily rejects invalid prescription code pattern() PASSED
+
+AssessmentApiTests > weekly trend returns grouped weeks() PASSED
+
+AssessmentApiTests > weekly trend rejects invalid code pattern() PASSED
+
+AssessmentApiTests > weekly trend applies null defaults for start and end weeks() PASSED
+
+AssessmentApiTests > reject future date() PASSED
+
+AssessmentApiTests > weekly trend change rate prev zero yields 0 instead of NaN or Inf() PASSED
+
+AssessmentControllerWebTests STANDARD_OUT
+    2025-10-16T18:02:00.061+09:00  INFO 20044 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bm.assignment.api.AssessmentControllerWebTests]: AssessmentControllerWebTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2025-10-16T18:02:00.067+09:00  INFO 20044 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bm.assignment.Application for test class com.bm.assignment.api.AssessmentControllerWebTests
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+
+     :: Spring Boot ::                (v3.3.4)
+
+    2025-10-16T18:02:00.075+09:00  INFO 20044 --- [    Test worker] c.b.a.api.AssessmentControllerWebTests   : Starting AssessmentControllerWebTests using Java 21.0.6 with PID 20044 (started by jinhobae in /Users/jinhobae/Downloads/beyond-medicine-assignment-kotlin-fix-ghandler)
+    2025-10-16T18:02:00.075+09:00  INFO 20044 --- [    Test worker] c.b.a.api.AssessmentControllerWebTests   : No active profile set, falling back to 1 default profile: "default"
+    2025-10-16T18:02:00.243+09:00  INFO 20044 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2025-10-16T18:02:00.243+09:00  INFO 20044 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2025-10-16T18:02:00.244+09:00  INFO 20044 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+    2025-10-16T18:02:00.248+09:00  INFO 20044 --- [    Test worker] c.b.a.api.AssessmentControllerWebTests   : Started AssessmentControllerWebTests in 0.18 seconds (process running for 3.241)
+
+AssessmentControllerWebTests > invalid prescription code yields problem detail 400() PASSED
+
+AssessmentControllerWebTests > invalid weeks yield problem detail 400() PASSED
+
+RepositoriesDataJpaTests STANDARD_OUT
+    2025-10-16T18:02:00.275+09:00  INFO 20044 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bm.assignment.repo.RepositoriesDataJpaTests]: RepositoriesDataJpaTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2025-10-16T18:02:00.286+09:00  INFO 20044 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bm.assignment.Application for test class com.bm.assignment.repo.RepositoriesDataJpaTests
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+
+     :: Spring Boot ::                (v3.3.4)
+
+    2025-10-16T18:02:00.301+09:00  INFO 20044 --- [    Test worker] c.b.a.repo.RepositoriesDataJpaTests      : Starting RepositoriesDataJpaTests using Java 21.0.6 with PID 20044 (started by jinhobae in /Users/jinhobae/Downloads/beyond-medicine-assignment-kotlin-fix-ghandler)
+    2025-10-16T18:02:00.301+09:00  INFO 20044 --- [    Test worker] c.b.a.repo.RepositoriesDataJpaTests      : No active profile set, falling back to 1 default profile: "default"
+    2025-10-16T18:02:00.343+09:00  INFO 20044 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2025-10-16T18:02:00.348+09:00  INFO 20044 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+    2025-10-16T18:02:00.355+09:00  INFO 20044 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+    2025-10-16T18:02:00.364+09:00  INFO 20044 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:2eacb74f-eabd-4866-8a78-aa330e06f6d6;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+    2025-10-16T18:02:00.375+09:00  INFO 20044 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2025-10-16T18:02:00.376+09:00  INFO 20044 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+    2025-10-16T18:02:00.381+09:00  INFO 20044 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+    2025-10-16T18:02:00.404+09:00  INFO 20044 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+    Hibernate: 
+        create table assessment_pains (
+            id bigint generated by default as identity,
+            intensity integer not null,
+            location enum ('CHIN','LEFT_JAW','LEFT_TEMPLE','NECK','RIGHT_JAW','RIGHT_TEMPLE') not null,
+            note varchar(255),
+            assessment_id bigint not null,
+            primary key (id)
+        )
+    Hibernate: 
+        create table daily_assessments (
+            id bigint generated by default as identity,
+            date date not null,
+            function_score integer not null,
+            pain_score integer not null,
+            stress_score integer not null,
+            week integer not null,
+            prescription_id bigint not null,
+            primary key (id)
+        )
+    Hibernate: 
+        create table prescriptions (
+            id bigint generated by default as identity,
+            activated_date date,
+            code varchar(8) not null,
+            created_at timestamp(6) not null,
+            primary key (id)
+        )
+    Hibernate: 
+        create index IDXoprn1c2hq3puoyerueh8kvafb 
+           on daily_assessments (prescription_id, date)
+    Hibernate: 
+        create index IDXjioy7ykgqwog6ijatl0owd24m 
+           on daily_assessments (prescription_id, week, date)
+    Hibernate: 
+        alter table if exists daily_assessments 
+           drop constraint if exists UKoprn1c2hq3puoyerueh8kvafb
+    Hibernate: 
+        alter table if exists daily_assessments 
+           add constraint UKoprn1c2hq3puoyerueh8kvafb unique (prescription_id, date)
+    Hibernate: 
+        alter table if exists prescriptions 
+           drop constraint if exists UKeo0i63ef8ol4dvcme4fto9eeg
+    Hibernate: 
+        alter table if exists prescriptions 
+           add constraint UKeo0i63ef8ol4dvcme4fto9eeg unique (code)
+    Hibernate: 
+        alter table if exists assessment_pains 
+           add constraint FKebbauj57xr3e2rkwnanuh0hob 
+           foreign key (assessment_id) 
+           references daily_assessments
+    Hibernate: 
+        alter table if exists daily_assessments 
+           add constraint FK151l563ogne4nlucvxm3dpo9d 
+           foreign key (prescription_id) 
+           references prescriptions
+    2025-10-16T18:02:00.410+09:00  INFO 20044 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2025-10-16T18:02:00.444+09:00  INFO 20044 --- [    Test worker] c.b.a.repo.RepositoriesDataJpaTests      : Started RepositoriesDataJpaTests in 0.157 seconds (process running for 3.437)
+
+RepositoriesDataJpaTests > unique daily per prescription and date() STANDARD_OUT
+    Hibernate: 
+        insert 
+        into
+            prescriptions
+            (activated_date, code, created_at, id) 
+        values
+            (?, ?, ?, default)
+    Hibernate: 
+        insert 
+        into
+            daily_assessments
+            (date, function_score, pain_score, prescription_id, stress_score, week, id) 
+        values
+            (?, ?, ?, ?, ?, ?, default)
+    Hibernate: 
+        select
+            da1_0.id 
+        from
+            daily_assessments da1_0 
+        where
+            da1_0.prescription_id=? 
+            and da1_0.date=? 
+        fetch
+            first ? rows only
+
+RepositoriesDataJpaTests > unique daily per prescription and date() PASSED
+w: Detected multiple Kotlin daemon sessions at kotlin/sessions
+
+[Incubating] Problems report is available at: file:///Users/jinhobae/Downloads/beyond-medicine-assignment-kotlin-fix-ghandler/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 9s
+5 actionable tasks: 4 executed, 1 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.1.0/userguide/configuration_cache_enabling.html
