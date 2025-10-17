@@ -205,6 +205,9 @@ COMPLETED: D+42 이후
 ```
 
 테스트는 MockMvc 기반 통합 테스트 형태로 구성되어 있으며, 주요 시나리오를 모두 포함합니다.
+<img width="720" height="365" alt="스크린샷 2025-10-17 오후 5 08 29" src="https://github.com/user-attachments/assets/700b49ac-7673-499d-bed3-6b9fe94ce7ab" />
+
+
 
 ### 주요 테스트 항목
 - Daily Assessment 정상 등록 및 중복 등록(409)  
